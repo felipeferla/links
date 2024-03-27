@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <style>
+  * {
+    border: thin red solid;
+  }
 
   .items {
     display: flex;
@@ -49,8 +52,32 @@
 
   .social-icons {
     display: flex;
-    width: 500px;
+    width: 300px;
+    height: 100px;
+  }
+
+  .instagram {
+    display: flex;
+    margin: auto;
+    padding: 10px 10px;
     justify-content: space-around;
+  }
+
+  .insta-logo {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin: 10px 10px;
+
+  }
+
+  .instagram a {
+    display: flex;
+    align-items: center;
+  }
+
+  .linkedin a {
+    display: flex;
   }
 
   .social-icons a {
@@ -75,7 +102,7 @@
 </style>
 
 <head>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
 </head>
 
 <body>
@@ -87,12 +114,17 @@
       Felipe Ferla
     </div>
     <div class="social-icons">
-      <a href="https://www.instagram.com/felipeferlaa/" target="_blank">
-        Instagram
-      </a>
-      <a href="https://www.linkedin.com/in/felipe-ferla-1a2206166" target="_blank">
-        Linkedin
-      </a>
+      <div class="instagram">
+        <img src="images/instagram-logo-png-transparent-background.png" class="insta-logo">
+        <a href="https://www.instagram.com/felipeferlaa/" target="_blank">
+          Instagram
+        </a>
+      </div>
+      <div class="linkedin">
+        <a href="https://www.linkedin.com/in/felipe-ferla-1a2206166" target="_blank">
+          Linkedin
+        </a>
+      </div>
     </div>
     <div class="content-links">
       <img src="https://www.freepnglogos.com/uploads/porsche-logo-9.png" class="thumbnail">
