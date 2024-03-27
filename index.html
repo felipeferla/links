@@ -15,7 +15,7 @@
   }
 
   body {
-    background-color: #f8f5f2;
+    /* background-color: #f8f5f2; */
     min-height: 100vh;
     margin: 0;
   }
@@ -37,9 +37,22 @@
 
   .content-links {
     display: flex;
-    background-color: #fffffe;
     width: 1000px;
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Semi-transparent white background */
+    backdrop-filter: blur(1px);
+    /* Apply blur filter to the background */
+    -webkit-backdrop-filter: blur(10px);
+    /* For Safari and older browsers */
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    /* Optional: adds a subtle border to the boxes */
+    padding: 10px;
+    /* Optional: adds some space inside the boxes */
+    margin: 10px 0;
+    /* Optional: adds some vertical space between the boxes */
+  }
+
   }
 
   .content-links a {
@@ -93,13 +106,6 @@
     object-fit: cover;
   }
 
-  .thumbnail-pagani {
-    width: 40px;
-    height: 20px;
-    margin: 10px;
-    object-fit: cover;
-  }
-
 </style>
 
 <head>
@@ -137,8 +143,8 @@
       </a>
     </div>
     <div class="content-links">
-      <img src="https://1000logos.net/wp-content/uploads/2020/04/Pagani-Logo-1992-500x281.png" class="thumbnail-pagani">
-      <a href="https://www.pagani.com/" target="_blank"> Pagani
+      <img src="/images/lamborghini_PNG10709.png" class="thumbnail">
+      <a href="https://www.lamborghini.com/en-en" target="_blank"> Lamborghini
       </a>
     </div>
   </div>
